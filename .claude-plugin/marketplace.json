@@ -1,0 +1,23 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "oh-my-worxphere",
+  "description": "Worxphere onboarding & MCP auto-configuration for Claude Code",
+  "owner": {
+    "name": "seokmogu"
+  },
+  "plugins": [
+    {
+      "name": "oh-my-worxphere",
+      "description": "Slack, Notion, GitLab MCP auto-config + internal portal integration + SessionStart auto-provisioning",
+      "version": "1.0.0",
+      "author": {
+        "name": "seokmogu"
+      },
+      "source": "./",
+      "category": "productivity",
+      "homepage": "https://github.com/seokmogu/oh-my-worxphere",
+      "tags": ["worxphere", "onboarding", "mcp", "setup", "enterprise"]
+    }
+  ],
+  "version": "1.0.0"
+}

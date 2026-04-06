@@ -1,0 +1,37 @@
+{
+  "name": "oh-my-worxphere",
+  "version": "1.0.0",
+  "description": "Worxphere onboarding, enterprise governance, and MCP auto-configuration plugin for Claude Code. Requires oh-my-claudecode (omc) as execution engine.",
+  "author": {
+    "name": "seokmogu"
+  },
+  "repository": "https://github.com/seokmogu/oh-my-worxphere",
+  "homepage": "https://github.com/seokmogu/oh-my-worxphere",
+  "license": "MIT",
+  "keywords": [
+    "worxphere",
+    "onboarding",
+    "mcp",
+    "setup",
+    "enterprise",
+    "governance",
+    "slack",
+    "notion",
+    "gitlab"
+  ],
+  "skills": "./skills/",
+  "userConfig": {
+    "gitlab_token": {
+      "title": "GitLab Token",
+      "description": "GitLab Personal Access Token (<INTERNAL_GITLAB>)",
+      "type": "string",
+      "sensitive": true
+    },
+    "slack_team_id": {
+      "title": "Slack Team ID",
+      "description": "Slack Team ID for MCP configuration",
+      "type": "string",
+      "sensitive": false
+    }
+  }
+}
