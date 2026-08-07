@@ -1,6 +1,6 @@
 ---
 name: worx-mcp-config
-description: "Slack, Notion, GitHub, GitLab MCP auto-configuration using claude mcp add CLI"
+description: "Slack, official Hosted Notion, GitHub, and GitLab MCP configuration using claude mcp add CLI"
 level: 2
 ---
 
@@ -102,18 +102,13 @@ claude mcp add -e GITHUB_TOKEN=<token> github -- npx -y @anthropic-ai/claude-cod
 
 ### Notion
 
-Requires: Integration Token
-
-Guide the user:
-> Notion Integration Token 발급:
-> 1. https://www.notion.so/my-integrations > "New integration"
-> 2. 사내 워크스페이스 선택, "Internal integration"
-> 3. Token 복사 (ntn_...)
-> 4. 연동할 페이지에서 "..." > "연결 추가"로 Integration 허용
+Use Notion's official hosted remote MCP. Do not ask for an integration token and do not install a local npm Notion MCP server.
 
 ```bash
-claude mcp add -e NOTION_TOKEN=<token> notion -- npx -y @anthropic-ai/claude-code-notion-mcp
+claude mcp add --transport http --scope user notion https://mcp.notion.com/mcp
 ```
+
+Complete the OAuth connection in Claude Code when prompted. This MCP is the interactive search/fetch/narrow-edit surface. Markdown batch deployment is not part of this onboarding skill and follows `/Users/seokmogu/project/NOTION_PUBLISHING.md`.
 
 ### GitLab (Internal - <INTERNAL_GITLAB>)
 

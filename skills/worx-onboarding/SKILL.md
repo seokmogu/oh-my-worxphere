@@ -34,7 +34,7 @@ USAGE:
 
 WHAT IT DOES:
   Phase 1: Environment check (OS, tools, prerequisites)
-  Phase 2: MCP server setup (Slack, Notion, GitHub, GitLab, Context7)
+  Phase 2: MCP server setup (Slack, official Hosted Notion with OAuth, GitHub, GitLab, Context7)
   Phase 3: Internal portal integration (glab, direnv, network)
   Phase 4: Verification and summary
 
